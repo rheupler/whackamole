@@ -1,6 +1,7 @@
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
-let moles = document.querySelectorAll('.mole2');
+let moles = document.querySelectorAll('.mole');
+let moles2 = document.querySelectorAll('.mole2');
 let lastHole;
 let timeUp = false;
 
@@ -74,3 +75,4 @@ function bonk(e) {
 }
 
 moles.forEach(mole => mole.addEventListener('click', bonk));
+moles2.forEach(mole => mole.addEventListener('click', bonk));
