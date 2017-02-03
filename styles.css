@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: lightblue;
 }
 
 *, *:before, *:after {
@@ -26,6 +25,14 @@ h3 {
   text-align: center;
   font-size: 5rem;
   margin: 10px;
+}
+
+.main-body {
+  background-color: lightblue;
+}
+
+.alternate {
+  background-color: lightyellow;
 }
 
 .score {
@@ -81,6 +88,16 @@ button {
   transition:all 0.4s;
 }
 
-.hole.up .mole {
+.mole2 {
+  background: url("img/jenmatt4.png") bottom center no-repeat;
+  background-size:130%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s;
+}
+
+.hole.up .mole, .hole.up .mole2 {
   top:0;
 }
