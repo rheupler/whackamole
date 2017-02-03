@@ -60,7 +60,7 @@ function startGame() {
   scoreBoard.textContent = 0;
   timeUp = false;
   score = 0;
-  peep();
+  setTimeout(() => peep(), 1000);
   setTimeout(() => timeUp = true, 10000);
 }
 
