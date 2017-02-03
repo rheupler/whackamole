@@ -101,3 +101,7 @@ button {
 .hole.up .mole, .hole.up .mole2 {
   top:0;
 }
+
+a {
+  text-decoration: none;
+}
