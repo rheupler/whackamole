@@ -48,6 +48,15 @@ function peep() {
 }
 
 function startGame() {
+  const counter = 10;
+  const timer = document.querySelector('.timer')
+  let timeleft = 10;
+  let gameTimer = setInterval(function(){
+    timer.innerHTML = 1 + --timeleft;
+    if(timeleft <= -1)
+      clearInterval(gameTimer);
+  }, 1000);
+
   scoreBoard.textContent = 0;
   timeUp = false;
   score = 0;
